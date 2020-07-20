@@ -20,9 +20,10 @@ Existen muchos tipos de datos y dependen mucho de los lenguajes, pero una buena 
   - **Texto**: Representa cadenas de caracteres ("El murciélago volaba en la oscuridad")
   - **Lista**: Representa una secuencia de entidades ordenadas posicionalmente ( \[38, "Argentina", 'M', true\] )
   - **Diccionario**: Representa una secuencia de entidades ordenadas por clave-valor ( {"edad": 38, "nacionalidad": "Argentina", "genero": 'M', "alta": true} )
+- **Otros**
+  - **Fecha**: Representa una fecha ("31/12/1999", "01/01/2000")
 
 Los textos son considerados históricamente como cadenas de caracteres, por eso están clasificados como de valores múltiples, aunque en algunos lenguajes de más alto nivel podrían considerarse como de valores únicos.
-
 
 Tipo | Java | Python | JavaScript
 --- | --- | --- | ---
@@ -36,27 +37,43 @@ Diccionario | | dict |
 
 # ESTRUCTURAS DE CONTROL
 
-## Condicional
-La estructura condicional es una de las más sencillas que podemos encontrar, pero a la vez, es muy potente y es una de las más usadas por su gran versatilidad.
+## Estructura Condicional
+La estructura condicional es una de las más simples que podemos encontrar, pero a la vez, es muy potente y es una de las más usadas por su gran versatilidad.
 En su forma más básica la estructura contiene dos partes principales: la **condición** y la **acción** que se ejecuta en caso de que la condición sea verdadera.
-Para identificar a la condición, generalmente se la precede por la palabra reservada **if**, y cuya sintaxis varía según el lenguaje. En el caso de que la condición no se cumpla, simplemente no se ejecuta la acción y el programa continúa normalmente.
+Se utiliza una sentencia con la forma **if** condición **then**, aunque esta sintaxis varía según el lenguaje. En el caso de que la condición no se cumpla, simplemente no se ejecuta la acción y el programa continúa normalmente.
 
-Java example:
+Ejemplo VisualBasic:
+```vb
+If condition Then
+  do_something
+End If
+```
+
+Ejemplo Java:
 ```java
 if (condition) {
   do_something;
 }
 ```
 
-Python example:
+Ejemplo Python:
 ```python
 if condition:
   do_something
 ```
 
-A estas estructuras de control, además se les puede agregar otra acción para el caso en el que la condición sea falsa, es decir que no se cumpla. Para identificar esta alternativa, generalmente se utiliza la palabra reservada **else**, la sintaxis varía según el lenguaje y en algunos su utilización es obligatoria. En el caso de utilizarla, una vez que el programa llega a esta estructura, no le va a quedar otra alternativa que ejecutar una de las dos acciones. 
+A esta estructura de control, además se le puede agregar otra acción para el caso en el que la condición sea falsa, es decir que no se cumpla. Para esta expresión, generalmente se utiliza la expresión **else**, la sintaxis varía según el lenguaje y en algunos su utilización es obligatoria. Una vez que el programa llega a una estructura **if then else**, no le queda otra alternativa que ejecutar una de las dos acciones. 
 
-Java example:
+Ejemplo VisualBasic:
+```vb
+If condition Then
+  do_something
+Else
+  do_something_else
+End If
+```
+
+Ejemplo Java:
 ```java
 if (condition) {
   do_something;
@@ -65,7 +82,7 @@ if (condition) {
 }
 ```
 
-Python example:
+Ejemplo Python:
 ```python
 if condition:
   do_something
@@ -73,7 +90,16 @@ else:
   do_something_else
 ```
 
-else if
+Además de la expresión **else** se puede agregar la expresión del tipo **else if** con la que se podría adicionar una o más condiciones y acciones que se ejecutarán en el caso de que no se cumplan las condiciones anteriores. 
+
+Ejemplo VisualBasic:
+```vb
+If condition Then
+  do_something
+Else if other_condition Then
+  do_anything
+End If
+```
 
 Java example:
 ```java
