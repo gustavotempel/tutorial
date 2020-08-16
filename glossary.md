@@ -1,6 +1,6 @@
-# Development glossary
+# Glosario
 
-This is a glossary that contains definitions and examples about development concepts.
+Este es un glosario con términos que se utilizan dentro del ámbito TI donde se pueden encontrar definiciones y ejemplos. 
 
 [A](#A) - [B](#B) - [C](#C) - [D](#D) - [E](#E) - [F](#F) - [G](#G) - [H](#H) - [I](#I) - [J](#J) - [K](#K) - [L](#L) - [M](#M) - [N](#N) - [O](#O) - [P](#P) - [Q](#Q) - [R](#R) - [S](#S) - [T](#T) - [U](#U) - [V](#V) - [W](#W) - [X](#X) - [Y](#Y) - [Z](#Z)
 
@@ -8,7 +8,7 @@ This is a glossary that contains definitions and examples about development conc
 
 **AJAX:** Asynchronous JavaScript And XML. *JavaScript asíncrono y XML.*
 
-**Angular:** [TypeScript](#TypeScript) Framework.
+**Angular:** [TypeScript](#T) Framework.
 
 **AngularJS:** JavaScript Framework.
 
@@ -16,7 +16,7 @@ This is a glossary that contains definitions and examples about development conc
 
 **API:** Application Programming Interface. *Interfaz de Programación de Aplicaciones.*
 
-**Applet:** Application that runs inside a program. A Java Applet runs in a browser.
+**Applet:** Application that runs inside a program. *A Java Applet runs in a browser.*
 
 ## B
 
@@ -205,6 +205,7 @@ Machine Learning: Aprendizaje Automatizado
 
 
 ## OSI MODEL
+
 Layer | Data | Devices/Protocols
 --- | --- | ---
 Application | Data | HTTP, FTP, IRC, SSH, DNS
